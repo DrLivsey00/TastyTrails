@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    font-family: "Kanit",  sans-serif;
+    line-height: 1.7;
+    color: #777;
+}
+h1,h2,h3,h4,h5,h6{
+    font-weight: 600;
+    color: #222;
+}
+a{
+    color: #222;
+    text-decoration: none;
+    transition: all 1s;
+    font-weight: 600;
+}
+a:hover{
+    color: red;
+}
+img{
+    width: 100%;
+}
+.btn{
+    border-radius: 0px;
+    padding: 14px 38px;
+}
+.btn-brand{
+    background-color: orange;
+    border-color: orange;
+    color: white;
+    border: 0;
+    font-weight: 600;
+}
+.btn-brand:hover{
+    background-color: rgb(193, 126, 0);
+    border-color: rgb(193, 126, 0);
+    color: white;
+}
+.logo{
+    width:40px;
+    height:30px;
+}
+.slide-1{
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../images/1.jpg);
+    background-size: cover;
+
+}
+.slide-2{
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../images/5.jpg);
+    background-size: cover;
+}
+section{
+    padding-top: 120px;
+    
+}
+
+#about .divider{
+    width: 60px;
+    height: 2px;
+    display: block;
+    background-color: orange;
+}
+
+#about .Abh{
+    color:rgb(146, 98, 8);
+}
+
+.intro-text{
+    margin-bottom: 40px;
+    text-align: center;
+}
+.intro-text h1{
+    color: rgb(146, 98, 8);
+}
+.intro-text p{
+    max-width: 500px;
+    margin: 16px auto 0;
+}
+#menu .nav-pills .nav-link{
+    background-color: white;
+    color:rgb(146, 98, 8);
+    margin-left: 8px;
+    margin-right: 8px;
+    border-radius: 100px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+#menu .nav-pills .nav-link.active{
+    background-color:orange;
+    color:white;
+}
