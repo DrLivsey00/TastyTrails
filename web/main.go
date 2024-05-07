@@ -1,9 +1,9 @@
 package main
 
 import (
-	"github.com/DrLivsey00/TastyTrails/pkg/config"
-	"github.com/DrLivsey00/TastyTrails/pkg/handlers"
-	"github.com/DrLivsey00/TastyTrails/pkg/render"
+	"github.com/DrLivsey00/TastyTrails/internal/config"
+	"github.com/DrLivsey00/TastyTrails/internal/handlers"
+	"github.com/DrLivsey00/TastyTrails/internal/render"
 	"github.com/alexedwards/scs/v2"
 	"log"
 	"net/http"

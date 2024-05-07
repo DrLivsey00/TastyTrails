@@ -2,8 +2,8 @@ package render
 
 import (
 	"bytes"
-	"github.com/DrLivsey00/TastyTrails/pkg/config"
-	"github.com/DrLivsey00/TastyTrails/pkg/models"
+	"github.com/DrLivsey00/TastyTrails/internal/config"
+	"github.com/DrLivsey00/TastyTrails/internal/models"
 	"html/template"
 	"log"
 	"net/http"

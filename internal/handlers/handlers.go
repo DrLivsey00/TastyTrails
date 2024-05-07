@@ -2,9 +2,9 @@ package handlers
 
 import (
 	"fmt"
-	"github.com/DrLivsey00/TastyTrails/pkg/config"
-	"github.com/DrLivsey00/TastyTrails/pkg/models"
-	"github.com/DrLivsey00/TastyTrails/pkg/render"
+	"github.com/DrLivsey00/TastyTrails/internal/config"
+	"github.com/DrLivsey00/TastyTrails/internal/models"
+	"github.com/DrLivsey00/TastyTrails/internal/render"
 	"net/http"
 )
 
@@ -30,9 +30,11 @@ func (m *Repository) Home(w http.ResponseWriter, r *http.Request) {
 	render.RenderTemplate(w, "home.page.tmpl", &models.TemplateData{})
 	fmt.Println("Home Page opened")
 }
-func (m *Repository) About(w http.ResponseWriter, r *http.Request) {
+func (m *Repository) Add(w http.ResponseWriter, r *http.Request) {
 	stringMap := make(map[string]string)
 	stringMap["test"] = "Hello again"
-	render.RenderTemplate(w, "about.page.tmpl", &models.TemplateData{StringMap: stringMap})
-	fmt.Println("About Page opened")
+	dishName := r.FormValue("dish_name")
+	render.RenderTemplate(w, "add_dish.page.tmpl", &models.TemplateData{StringMap: stringMap})
+	fmt.Println("Add dish opened")
+	fmt.Println("блюдо: " + dishName)
 }

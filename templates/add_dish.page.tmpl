@@ -1,0 +1,44 @@
+{{template "base" .}}
+{{define "css"}}
+<link rel="stylesheet" href="/static/styles/add_dish_style.css">
+{{end}}
+{{define "content"}}
+<form action="/add" method="get" onsubmit="return validateForm()">
+    <fieldset>
+        <legend>Dish Adder</legend>
+        <div class="mb-3">
+            <label for="dish_name" class="form-label">Name</label>
+            <input type="text" id="dish_name" class="form-control" name="dish_name" placeholder="Enter dish name">
+            <small id="name-error" class="error-message"></small>
+            <div></div>
+
+            <label for="dish_category" class="form-label">Category</label>
+            <select class="form-select" id="dish_category" name="dish_category">
+                <option>Breakfast</option>
+                <option>Lunch</option>
+                <option>Main dish</option>
+                <option>Pizza</option>
+                <option>Sushi</option>
+                <option>Desserts</option>
+                <option>Drinks</option>
+            </select>
+            <small id="category-error" class="error-message"></small>
+            <div></div>
+
+            <label for="dish_description" class="form-label">Description</label>
+            <input type="text" id="dish_description" class="form-control" name="dish_description" placeholder="Enter dish description">
+            <small id="description-error" class="error-message"></small>
+            <div></div>
+
+            <label for="dish_price" class="form-label">Price</label>
+            <input type="text" id="dish_price" class="form-control" name="dish_price" placeholder="Enter dish price">
+            <small id="price-error" class="error-message"></small>
+
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </fieldset>
+</form>
+{{end}}
+{{define "js"}}
+<script src = '/static/scripts/add_dish.js'></script>
+{{end}}
